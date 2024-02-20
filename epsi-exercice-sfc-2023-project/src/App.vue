@@ -1,6 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import PlaylistComponent from './components/PlaylistComponent.vue';
+
+const handlePlaylistCreated = (playlistName) => {
+  console.log('Playlist created:', playlistName);
+}
 </script>
 
 <template>
@@ -16,6 +21,8 @@ import HelloWorld from './components/HelloWorld.vue'
       </nav>
     </div>
   </header>
+
+  <PlaylistComponent @playlist-created="handlePlaylistCreated" />
 
   <RouterView />
 </template>
