@@ -2,7 +2,7 @@
   <div>
     <div class="card" v-for="(radio, index) in radioDetails" :key="index">
       <h1>{{ radio.title }}</h1>
-      <a :href="radio.tracklist" target="_blank">Trackilst</a>
+      <a :href="radio.tracklist" target="_blank">Tracklist</a>
       <div class="image">
         <img :src="radio.image" alt="Image radio">
       </div>

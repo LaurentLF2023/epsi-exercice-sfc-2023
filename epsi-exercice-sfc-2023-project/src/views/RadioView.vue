@@ -1,5 +1,6 @@
 <template>
   <div class="card">
+    <h1>Radios</h1>
     <RadioComponent />
   </div>
 </template>
