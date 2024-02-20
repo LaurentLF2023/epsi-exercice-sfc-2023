@@ -2,8 +2,10 @@
   <div>
     <div class="card" v-for="(radio, index) in radioDetails" :key="index">
       <h1>{{ radio.title }}</h1>
-      <a>{{ radio.tracklist }}</a>
-      <img :src="radio.image" alt="Image radio">
+      <a :href="radio.tracklist" target="_blank">Trackilst</a>
+      <div class="image">
+        <img :src="radio.image" alt="Image radio">
+      </div>
     </div>
   </div>
 </template>
@@ -11,6 +13,12 @@
 <script>
 export default {
   name: 'RadioCard',
+  // props: {
+  //   radios: {
+  //     type: Array,
+  //     required: true
+  //   }
+  // },
   data() {
     return {
       radioDetails: [],
@@ -41,6 +49,15 @@ export default {
   created() {
     this.getRadioDetails();
   }
+  // watch: {
+  //   radios: {
+  //     handler() {
+  //       this.getRadioDetails();
+  //     },
+  //     deep: true,
+  //     immediate: true
+  //   }
+  // }
 }
 </script>
 
@@ -50,6 +67,11 @@ export default {
   transition: 0.3s;
   margin-bottom: 20px; /* Ajoute de l'espace entre les cartes */
   padding: 20px;
+
+}
+
+.image {
+  margin: 20px;
 }
 
 .card img {
