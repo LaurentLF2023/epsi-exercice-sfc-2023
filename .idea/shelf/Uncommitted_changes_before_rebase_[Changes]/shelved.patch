@@ -1,0 +1,28 @@
+Index: epsi-exercice-sfc-2023-project/src/components/PlaylistComponent.vue
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><template>\r\n  <div>\r\n    <form @submit.prevent=\"createPlaylist\">\r\n      <input type=\"text\" v-model=\"playlistName\" placeholder=\"Enter playlist name\" required>\r\n      <button type=\"submit\">Create Playlist</button>\r\n    </form>\r\n  </div>\r\n</template>\r\n\r\n<script setup>\r\nexport default {\r\n  data() {\r\n    return {\r\n      playlistName: '',\r\n    };\r\n  },\r\n}\r\n</script>\r\n\r\n\r\n\r\n<style scoped>\r\n\r\n</style>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/epsi-exercice-sfc-2023-project/src/components/PlaylistComponent.vue b/epsi-exercice-sfc-2023-project/src/components/PlaylistComponent.vue
+--- a/epsi-exercice-sfc-2023-project/src/components/PlaylistComponent.vue	(revision 9d91db3da4a876add8f575be0a3404bd767ce622)
++++ b/epsi-exercice-sfc-2023-project/src/components/PlaylistComponent.vue	(date 1708421516802)
+@@ -14,7 +14,16 @@
+       playlistName: '',
+     };
+   },
+-}
++  methods: {
++    createPlaylist() {
++      this.$emit('playlist-created', this.playlistName);
++      this.playlistName = '';
++    },
++    searchTracks(query) {
++      const apiUrl = ''
++    }
++  },
++};
+ </script>
+ 
+ 
