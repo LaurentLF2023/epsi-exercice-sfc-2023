@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import RadioView from '../views/RadioView.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <RadioView />
   </main>
 </template>

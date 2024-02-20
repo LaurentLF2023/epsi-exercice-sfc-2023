@@ -2,9 +2,8 @@
   <div>
     <div class="card" v-for="(radio, index) in radioDetails" :key="index">
       <h1>{{ radio.title }}</h1>
-      <p>{{ radio.description }}</p>
+      <a>{{ radio.tracklist }}</a>
       <img :src="radio.image" alt="Image radio">
-      <p>pouete</p>
     </div>
   </div>
 </template>
@@ -15,7 +14,7 @@ export default {
   data() {
     return {
       radioDetails: [],
-      radios: [37151, 30771, 41782, 31061],
+      radios: [37151, 36491, 165, 1501],
     }
   },
   methods: {
@@ -28,10 +27,11 @@ export default {
           const data = await response.json();
           const radioInfo = {
             title: data.title,
-            description: `Some description for ${data.title}`, // Ajustez selon les données disponibles
-            image: data.picture_medium // Ou une autre clé d'image selon l'API
+            tracklist: data.tracklist,
+            image: data.picture_big
           };
           this.radioDetails.push(radioInfo);
+          console.log(data)
         } catch (error) {
           console.error(error);
         }
