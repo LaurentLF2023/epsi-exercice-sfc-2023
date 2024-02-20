@@ -1,10 +1,18 @@
 <script setup>
+import {getArtist} from "@/Api.js";
+import {onMounted} from "vue";
+
+onMounted( () => {
+  let artists = getArtist("eminem")
+  console.log(artists)
+})
 defineProps({
   msg: {
     type: String,
     required: true
   }
 })
+
 </script>
 
 <template>
