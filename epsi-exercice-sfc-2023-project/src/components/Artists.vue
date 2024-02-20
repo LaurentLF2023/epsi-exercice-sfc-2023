@@ -41,7 +41,7 @@ export default {
             img-src="{{artist.picture}}"
             img-alt="Image"
             img-top
-            tag="artite"
+            tag="artiste"
             style="max-width: 20rem;"
             class="mb-2"
         >
