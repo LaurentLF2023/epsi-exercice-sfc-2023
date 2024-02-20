@@ -9,14 +9,12 @@
 
 
 <script setup>
-import axios from "axios";
-
+import { ref, emit } from 'vue';
 
 const playlistName = ref('');
+
 const createPlaylist = () => {
-
   emit('playlist-created', playlistName.value);
-
   playlistName.value = '';
 }
 </script>
