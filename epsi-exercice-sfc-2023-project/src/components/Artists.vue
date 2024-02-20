@@ -6,6 +6,7 @@ export default {
     return {
       artists: [],
       name: "",
+      picture: "",
       nbAlbum: "",
     };
   },
@@ -21,6 +22,7 @@ export default {
 
         this.artists = responses.map((response) => response.data)
         this.name = responses.map((response) => response.data.name);
+        this.picture = responses.map((response) => response.data.picture_medium);
         this.nbAlbum = responses.map((response) => response.data.nb_album);
       } catch (error) {
         console.error('Erreur lors de la récupération du titre depuis Deezer', error);
@@ -35,7 +37,8 @@ export default {
     <h1> Liste des artistes : </h1>
       <li v-for="artist in artists">
           {{ artist.name }}
-        <img src="{{artist.picture}}">
+        <img src="{{artist.picture}}" alt="image"/>
+        <p>Nombre d'albums : {{artist.nbAlbum}}</p>
       </li>
   </div>
 </template>
