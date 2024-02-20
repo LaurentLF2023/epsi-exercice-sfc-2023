@@ -1,9 +1,10 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import RadioView from '../views/RadioView.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <h1>Hello</h1>
+    <RouterLink to="/Radios">Radios</RouterLink>
   </main>
 </template>
