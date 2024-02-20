@@ -8,6 +8,7 @@ export default {
       name: "",
       picture: "",
       nbAlbum: "",
+      nbFan:"",
     };
   },
   mounted() {
@@ -24,6 +25,7 @@ export default {
         this.name = responses.map((response) => response.data.name);
         this.picture = responses.map((response) => response.data.picture_medium);
         this.nbAlbum = responses.map((response) => response.data.nb_album);
+        this.nbFan = responses.map((response) => response.data.nb_fan);
       } catch (error) {
         console.error('Erreur lors de la récupération du titre depuis Deezer', error);
       }
@@ -47,6 +49,7 @@ export default {
         >
           <b-card-text>
             Nombre d'albums : {{artist.nbAlbum}}
+            Nombre de fans : {{artist.nbFan}}
           </b-card-text>
         </b-card>
 
