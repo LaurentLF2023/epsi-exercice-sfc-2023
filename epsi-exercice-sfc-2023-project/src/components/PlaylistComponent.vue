@@ -7,32 +7,18 @@
   </div>
 </template>
 
+
 <script setup>
 import axios from "axios";
 
-export default {
-  data() {
-    return {
-      playlistName: '',
-    };
-  },
-  methods: {
-    createPlaylist() {
-      this.$emit('playlist-created', this.playlistName);
-      this.playlistName = '';
-    },
-    searchTracks(query) {
-      const apiUrl = 'https://api.deezer.com/search?q=${query}&limit=10&type=track';
-      axios.get(apiUrl)
-          .then(response => {
-            const tracks = response.data.data;
-          })
-          .catch(error => {
-            console.error('Error searching for tracks:', error);
-          });
-    },
-  },
-};
+
+const playlistName = ref('');
+const createPlaylist = () => {
+
+  emit('playlist-created', playlistName.value);
+
+  playlistName.value = '';
+}
 </script>
 
 <style scoped>

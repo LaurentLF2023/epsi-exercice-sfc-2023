@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b099f4f-8f80-4df5-839d-fba697feb10a" name="Changes" comment="third commit -&gt; parent child components">
+    <list default="true" id="8b099f4f-8f80-4df5-839d-fba697feb10a" name="Changes" comment="4th commit -&gt; playlist component style elements">
+      <change afterPath="$PROJECT_DIR$/epsi-exercice-sfc-2023-project/src/views/Playlists.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epsi-exercice-sfc-2023-project/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/epsi-exercice-sfc-2023-project/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/epsi-exercice-sfc-2023-project/src/components/PlaylistComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/epsi-exercice-sfc-2023-project/src/components/PlaylistComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epsi-exercice-sfc-2023-project/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/epsi-exercice-sfc-2023-project/src/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708415487282</updated>
-      <workItem from="1708415488483" duration="7563000" />
+      <workItem from="1708415488483" duration="9515000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit - create vuejs project">
       <option name="closed" value="true" />
@@ -142,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708423348988</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="4th commit -&gt; playlist component style elements">
+      <option name="closed" value="true" />
+      <created>1708424318001</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708424318001</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +177,7 @@
     <MESSAGE value="inital commit - create playlist component" />
     <MESSAGE value="second commit -&gt; playlist component template creation" />
     <MESSAGE value="third commit -&gt; parent child components" />
-    <option name="LAST_COMMIT_MESSAGE" value="third commit -&gt; parent child components" />
+    <MESSAGE value="4th commit -&gt; playlist component style elements" />
+    <option name="LAST_COMMIT_MESSAGE" value="4th commit -&gt; playlist component style elements" />
   </component>
 </project>
