@@ -35,10 +35,21 @@ export default {
 <template>
   <div id="demo">
     <h1> Liste des artistes : </h1>
-      <li v-for="artist in artists">
-          {{ artist.name }}
-        <img src="{{artist.picture}}" alt="image"/>
-        <p>Nombre d'albums : {{artist.nbAlbum}}</p>
+        <li v-for="artist in artists">
+          <b-card
+            title="{{artist.name}}"
+            img-src="{{artist.picture}}"
+            img-alt="Image"
+            img-top
+            tag="artite"
+            style="max-width: 20rem;"
+            class="mb-2"
+        >
+          <b-card-text>
+            Nombre d'albums : {{artist.nbAlbum}}
+          </b-card-text>
+        </b-card>
+
       </li>
   </div>
 </template>
