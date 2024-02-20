@@ -1,5 +1,6 @@
 <template>
   <div class="card">
+    <RouterLink to="/">Home</RouterLink>
     <h1>Radios</h1>
     <RadioComponent />
   </div>

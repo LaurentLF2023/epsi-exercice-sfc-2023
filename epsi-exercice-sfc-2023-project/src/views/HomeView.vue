@@ -4,6 +4,7 @@ import RadioView from '../views/RadioView.vue'
 
 <template>
   <main>
-    <RadioView />
+    <h1>Hello</h1>
+    <RouterLink to="/Radios">Radios</RouterLink>
   </main>
 </template>
